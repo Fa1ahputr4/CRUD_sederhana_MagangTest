@@ -1,32 +1,36 @@
-# Test-Case
+## Studi Kasus: Aplikasi Manajemen Karyawan dan Departemen
 
-## Studi Kasus: Sistem Manajemen Data Karyawan Sederhana
-### Latar Belakang
-Mengembangkan sebuah sistem manajemen data karyawan sederhana.
+### Deskripsi Proyek:
+Anda diminta untuk mengembangkan sebuah aplikasi web yang memungkinkan manajer untuk mengelola data karyawan dan departemen dalam sebuah perusahaan. Aplikasi ini harus memungkinkan manajer untuk melakukan operasi CRUD (Create, Read, Update, Delete) pada data karyawan dan departemen, serta menyediakan fitur login dan registrasi untuk keamanan.
 
-### Tujuan
-Membangun sebuah sistem manajemen data karyawan sederhana dengan fitur-fitur sebagai berikut:
+### Spesifikasi Proyek:
+1. Halaman Utama:
+   - Tampilkan daftar karyawan dengan informasi dasar (nama, email, departemen).
+   - Tampilkan daftar departemen dengan jumlah karyawan di setiap departemen.
 
-**1. Manajemen Karyawan:**
-- Menambahkan karyawan baru.
-- Mengedit informasi karyawan yang ada.
-- Menghapus karyawan.
-- Melihat daftar semua karyawan.
+2. Fungsi CRUD untuk Karyawan:
+   - Halaman untuk menambahkan karyawan baru.
+   - Halaman untuk mengedit informasi karyawan yang sudah ada.
+   - Fitur untuk menghapus karyawan.
 
-**2. Manajemen Departemen:**
-- Menambahkan Departemen
-- Mengedit informasi Departemen yang ada.
-- Menghapus Departemen.
-- Melihat daftar Departemen.
+3. Fungsi CRUD untuk Departemen:
+   - Halaman untuk menambahkan departemen baru.
+   - Halaman untuk mengedit informasi departemen yang sudah ada.
+   - Fitur untuk menghapus departemen.
 
-**3. Laporan:**
-- Menghasilkan laporan data karyawan menggunakan excel dan pdf.
+4. Fitur Pengguna:
+   - Halaman login untuk masuk ke sistem.
+   - Halaman profil pengguna yang menampilkan informasi dasar pengguna.
 
-### Skema Database
-**1. Tabel employees**
+### Teknologi
+- Framework: Laravel
+- Database: MySQL atau Postgre
 
-![Screen Shot 2024-07-30 at 09 38 09](https://github.com/user-attachments/assets/2a63ee29-2f1c-49f4-98de-1200b0f1a896)
+### Desain Table
+1. table employees
+   
+  ![Screen Shot 2024-08-01 at 09 40 53](https://github.com/user-attachments/assets/82f16835-fdc4-418a-929c-e5d339d459fe)
 
-**2. tabel departements**
+2. table departement
 
-![Screen Shot 2024-07-30 at 09 45 28](https://github.com/user-attachments/assets/dcffbef6-a60c-497d-8c2e-109cb1b72c83)
+![Screen Shot 2024-08-01 at 09 43 32](https://github.com/user-attachments/assets/40172657-72f4-441e-bfc1-88d8a9a1e4a8)
