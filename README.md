@@ -4,21 +4,17 @@
 Anda diminta untuk mengembangkan sebuah aplikasi web yang memungkinkan manajer untuk mengelola data karyawan dan departemen dalam sebuah perusahaan. Aplikasi ini harus memungkinkan manajer untuk melakukan operasi CRUD (Create, Read, Update, Delete) pada data karyawan dan departemen, serta menyediakan fitur login dan registrasi untuk keamanan.
 
 ### Spesifikasi Proyek:
-1. Halaman Utama:
-   - Tampilkan daftar karyawan dengan informasi dasar (nama, email, departemen).
-   - Tampilkan daftar departemen dengan jumlah karyawan di setiap departemen.
-
-2. Fungsi CRUD untuk Karyawan:
+1. Fungsi CRUD untuk Karyawan:
    - Halaman untuk menambahkan karyawan baru.
    - Halaman untuk mengedit informasi karyawan yang sudah ada.
    - Fitur untuk menghapus karyawan.
 
-3. Fungsi CRUD untuk Departemen:
+2. Fungsi CRUD untuk Departemen:
    - Halaman untuk menambahkan departemen baru.
    - Halaman untuk mengedit informasi departemen yang sudah ada.
    - Fitur untuk menghapus departemen.
 
-4. Fitur Pengguna:
+3. Fitur Pengguna:
    - Halaman login untuk masuk ke sistem.
 
 ### Teknologi
