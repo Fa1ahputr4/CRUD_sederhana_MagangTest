@@ -20,7 +20,6 @@ Anda diminta untuk mengembangkan sebuah aplikasi web yang memungkinkan manajer u
 
 4. Fitur Pengguna:
    - Halaman login untuk masuk ke sistem.
-   - Halaman profil pengguna yang menampilkan informasi dasar pengguna.
 
 ### Teknologi
 - Framework: Laravel
