@@ -1,0 +1,12 @@
+/* resources/css/custom.css */
+.custom-header {
+    background-color: #f8fafc; /* Ubah sesuai kebutuhan */
+    color: #333; /* Ubah sesuai kebutuhan */
+    padding: 1rem;
+}
+
+.custom-nav {
+    background-color: #f8fafc; /* Ubah sesuai kebutuhan */
+    color: #333; /* Ubah sesuai kebutuhan */
+    padding: 0.5rem;
+}
