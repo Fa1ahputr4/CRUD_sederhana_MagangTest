@@ -1,15 +1,7 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 light:text-gray-200 leading-tight">
-            {{ __('Employee') }}
-        </h2>
-    </x-slot>
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
         <title>{{$title}}</title>
-        <link rel="stylesheet" href="/css/style.css">
     </head>
-        <body>
         <div class="card px-3 py-3">
             <div class="col-15">
                 <h1 class="mt-3">Data Employee</h1>
@@ -93,6 +85,5 @@
 });
 
         </script>   
-    </body>
     </html>
 </x-app-layout>

@@ -1,9 +1,4 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 light:text-gray-200 leading-tight">
-            {{ __('Departement') }}
-        </h2>
-    </x-slot>
     <head>
         <title>{{$title}}</title>
     </head>

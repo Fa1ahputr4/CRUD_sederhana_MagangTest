@@ -1,20 +1,7 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 light:text-gray-200 leading-tight">
-            {{ __('Employee') }}
-        </h2>
-    </x-slot>
-
-    <!DOCTYPE html>
-    <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <title>Employee | Edit</title>
-        <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body>
         <div class="card px-3 py-3">
             <h1 class="my-3">Form Edit Data Employee</h1>
             <form method="POST" action="{{ route('employee.update', $employee->id) }}">
@@ -82,14 +69,9 @@
                     <a href="{{ route('employee') }}" class="btn btn-secondary me-2">Kembali</a>
                     <button type="submit" class="btn btn-success" onclick="return confirm('Apakah Anda yakin ingin mengubah data ini?')">Simpan</button>
                 </div>
-                
-                
             </form>
         </div>
     </div>
-    </body>
     </html>
-    
-
 </x-app-layout>
 

@@ -1,17 +1,6 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 light:text-gray-200 leading-tight">
-            {{ __('Employee') }}
-        </h2>
-    </x-slot>
-
-    <!DOCTYPE html>
-    <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Employee | Tambah</title>
-        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <div class="card px-3 py-3">
