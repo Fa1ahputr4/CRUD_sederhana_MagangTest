@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Departemen;
 use App\Models\Employee;
+use Illuminate\Support\Facades\View;
 
 
 class DashboardController extends Controller
@@ -24,6 +25,11 @@ class DashboardController extends Controller
         $jmll = Employee::where('gender', 'L')->count();
         $jmlp = Employee::where('gender', 'P')->count();
 
+        $nav = "Dashboard";
+        
+        // Share the title with all views
+        View::share('navtitle', $nav);
+
         // Kirim data ke view
         return view('dashboard', [
             'dep' => $jmldep,
@@ -31,7 +37,8 @@ class DashboardController extends Controller
             'activ' => $jmlaktif,
             'inactiv' => $jmlinaktif,
             'laki' => $jmll,
-            'perempuan' => $jmlp
+            'perempuan' => $jmlp,
+            'title' => 'Dashboard'
         ]);
     }
 }

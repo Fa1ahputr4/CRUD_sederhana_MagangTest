@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('departemen_id');
             $table->enum('gender', ['L','P']);
             $table->string('phone', 15);
-            $table->string('email', 50);
+            $table->string('email', 50)->nullable();
             $table->boolean('is_active');
             $table->timestamps();
         });

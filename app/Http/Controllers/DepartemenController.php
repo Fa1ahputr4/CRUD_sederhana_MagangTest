@@ -10,12 +10,12 @@ class DepartemenController extends Controller
     public function index()
     {
         $departemen = Departemen::all();
-        return view('departemen/index', ['departemen' => $departemen]);
+        return view('departemen/index', ['departemen' => $departemen, 'title' => 'Departemen']);
     }
 
     public function tambah()
     {
-        return view('departemen/tambah');
+        return view('departemen/tambah', ['title' => 'Departemen | Tambah']);
     }
 
     public function proses(Request $request)
@@ -34,7 +34,7 @@ class DepartemenController extends Controller
     public function edit($id)
     {
         $departemen = Departemen::find($id);
-        return view('departemen.edit', ['departemen' => $departemen]);
+        return view('departemen.edit', ['departemen' => $departemen, 'title' => 'Departemen | Edit']);
     }
 
     public function update($id, Request $request)

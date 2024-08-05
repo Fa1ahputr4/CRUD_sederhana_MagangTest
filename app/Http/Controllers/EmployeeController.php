@@ -12,7 +12,7 @@ class EmployeeController extends Controller
     public function index()
     {
         $employee = Employee::all();
-        return view('employee/index', ['employee' => $employee]);
+        return view('employee/index', ['employee' => $employee, 'title' => 'Employee']);
     }
 
     public function tambah()
@@ -30,7 +30,6 @@ class EmployeeController extends Controller
             'departemen_id' => 'required',
             'gender' => 'required',
             'phone' => 'required',
-            'email' => 'required',
         ]);
 
         // Buat entri baru di tabel employees
