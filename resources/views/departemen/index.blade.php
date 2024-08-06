@@ -1,8 +1,7 @@
 <x-app-layout>
-    <head>
-        <title>{{$title}}</title>
-    </head>
-<body>
+    @slot('title')
+    Departement
+    @endslot
     <div class="card px-3 py-3">
         <div class="col-15">
             <form action="">
@@ -60,16 +59,5 @@
             </form>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#dep').DataTable();
-        });
-    </script>
-</body>
 </html>
 </x-app-layout>

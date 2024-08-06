@@ -1,7 +1,7 @@
 <x-app-layout>
-    <head>
-        <title>Employee | Tambah</title>
-    </head>
+    @slot('title')
+    Employee | Tambah
+    @endslot
     <body>
         <div class="card px-3 py-3">
             <h1 class="mb-3">Form Tambah Data Employee</h1>

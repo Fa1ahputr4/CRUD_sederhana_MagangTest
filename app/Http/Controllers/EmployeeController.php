@@ -61,7 +61,6 @@ class EmployeeController extends Controller
             'departemen_id' => 'required',
             'gender' => 'required',
             'phone' => 'required',
-            'email' => 'required',
         ]);
     
         $employee = Employee::findOrFail($id);

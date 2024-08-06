@@ -1,13 +1,8 @@
 
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-900 light:text-gray-100 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-<head>
-    <title>{{$title}}</title>
-</head>
+    @slot('title')
+    Dashboard
+    @endslot
             <!-- Data Master Cards -->
             <div class="row mt-1">
                 <!-- Existing Cards -->
@@ -66,9 +61,4 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
 </x-app-layout>

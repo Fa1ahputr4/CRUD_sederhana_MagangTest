@@ -1,7 +1,7 @@
 <x-app-layout>
-    <head>
-        <title>{{$title}}</title>
-    </head>
+    @slot('title')
+    Departement | Edit
+    @endslot
         <form method="POST" action="/departemen/update/{{ $departemen->id }}">
             @csrf
             <div class="card px-3 py-3">

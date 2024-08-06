@@ -1,7 +1,7 @@
 <x-app-layout>
-    <head>
-        <title>{{$title}}</title>
-    </head>
+    @slot('title')
+    Departement | Tambah
+    @endslot
         <form method="POST" action="{{ route('departemen.proses') }}">
             @csrf
             <div class="card px-3 py-3">

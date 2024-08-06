@@ -1,7 +1,7 @@
 <x-app-layout>
-    <head>
-        <title>Employee | Edit</title>
-    </head>
+    @slot('title')
+    Employee | Edit
+    @endslot
         <div class="card px-3 py-3">
             <h1 class="my-3">Form Edit Data Employee</h1>
             <form method="POST" action="{{ route('employee.update', $employee->id) }}">
@@ -55,7 +55,7 @@
                 <div class="row mb-3">
                     <label class="col-sm-2 col-form-label">Email:</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $employee->email) }}" required>
+                        <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $employee->email) }}">
                     </div>
                 </div>
                 <div class="row mb-3">
